@@ -1,19 +1,27 @@
     public class Checksum {
-
-        public byte[] calcularChecksum(char vet[]) {
+        public static byte[] calcularChecksum(char vet[]) {
             byte byVeto[] = new byte[vet.length+1]; 
-            byte total = 0; 
+            int total = 0; 
             int i = 0;
-
+    
             for (i = 0; i < vet.length; i++) {
                 byVeto[i] = (byte) vet[i];
-                total = (byte) ((total + byVeto[i]) & 0xFF);
+                System.out.println(Integer.toBinaryString(byVeto[i]));
+                total = (total + byVeto[i]);
+                System.out.println("total local: " +Integer.toBinaryString(total));
             }
-            total = (byte) ~total;
-            total = (byte) ((total + (byte) 1) & 0xFF);
-            System.out.println("Checksum: " + total);
-            byVeto[i+1] = total;
+            System.out.println("total: " +Integer.toBinaryString(total));
+            total = ((byte) ~total);
+            System.out.println("total + 1: " +Integer.toBinaryString(total));
+            total = (byte) ((total + 1) & 0xFF);
+    
+            System.out.println("Checksum: " + Integer.toBinaryString(total));
+    
+            byVeto[vet.length] = (byte) total;
+    
             return byVeto;
         }
-        
+       
+
+        }
     }
