@@ -1,8 +1,14 @@
-public class Checksum{
+public class Checksum {
 
+    public void calcularChecksum(char vet[]) {
+        byte byVeto[] = new byte[vet.length]; 
+        byte total = 0; 
 
-    public void calcularChecksum(String test){
-        
+        for (int i = 0; i < vet.length; i++) {
+            byVeto[i] = (byte) vet[i];
+            total = (byte) (total + byVeto[i]); 
+        }
+
+        System.out.println("Checksum: " + total);
     }
-
 }
