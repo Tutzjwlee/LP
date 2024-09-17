@@ -1,4 +1,5 @@
-
+package ordena.src.test.java.aula19;
+import ordena.src.test.java.OrdenaTest; 
 public class Ordena {
     public void ordenaNumerosDecrescentes(int vetor[]){
         int menor, maior, aux;
