@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.zip.CRC32;
 
 public class testChecksum {
     public static byte[] calcularChecksum(char vet[]) {
@@ -55,6 +56,15 @@ public class testChecksum {
             writer.write("\nChecksum: " + checksum[conteudo.length]); // Grava o checksum ao final
             writer.close();
         }
+        
+         public static long calcularCRC32(char[] texto) {
+        CRC32 crc = new CRC32();
+        for (char c : texto) {
+            crc.update((byte) c); 
+        }
+        return crc.getValue(); 
+    }
+
     
     public static void main(String[] args) {
         char vet[] = {'A','B','C'};
@@ -67,5 +77,7 @@ public class testChecksum {
         } catch (IOException e) {
             System.err.println("Erro ao processar o arquivo: " + e.getMessage());
         }
+
+        System.out.println(calcularChecksum(vet));
     }
 }
