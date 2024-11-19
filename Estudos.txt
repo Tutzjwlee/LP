@@ -1,0 +1,56 @@
+Questão 1
+Afirmações:
+"As principais características da Arquitetura Cliente-Servidor são: cliente; servidor; banco de dados; comunicação; distribuição de tarefas; e escalabilidade."
+
+Resposta: Correta.
+A arquitetura cliente-servidor é caracterizada por essas funcionalidades fundamentais, incluindo a separação de responsabilidades e a capacidade de escalar.
+"Aplicações Java para a arquitetura Cliente-Servidor possuem uma única aplicação Java Servidor, responsável por gerenciar as aplicações dos clientes e intermediar a comunicação entre eles pela rede."
+
+Resposta: Correta.
+Em aplicações Java, é comum ter um servidor central para gerenciar as conexões dos clientes e a comunicação.
+"Aplicações Java para a arquitetura Cliente-Servidor possuem sempre duas aplicações Java Cliente, cada uma delas conectada com a outra, sempre através do servidor, podendo utilizar tipos diferentes de dispositivos em rede."
+
+Resposta: Errada.
+Não há restrição de que sejam sempre dois clientes. Além disso, os clientes não se conectam diretamente entre si.
+"Um socket representa um canal de comunicação bidirecional entre duas aplicações, com um socket de um lado conectado ao socket do outro, possibilitando o tráfego de dados entre eles e entre suas aplicações."
+
+Resposta: Correta.
+Um socket é um canal bidirecional que permite o envio e o recebimento de dados entre aplicações.
+Questão 2
+Afirmações:
+"Com o aumento da complexidade das aplicações, torna-se fundamental a separação entre os dados, o Model (ou Modelo), e o controlador de aplicação, a View (ou Visão)."
+
+Resposta: Errada.
+O controlador de aplicação é representado pelo Controller, e não pela View.
+"Alterações feitas na interface com o usuário não devem afetar a manipulação de dados e os dados podem ser reorganizados sem alterar a interface com o usuário."
+
+Resposta: Correta.
+Essa é uma das vantagens principais do padrão MVC, onde há separação clara entre lógica de negócio e apresentação.
+"Para separar as tarefas de acesso aos dados e lógica de negócio, lógica de apresentação e de interação com o usuário, deve ser introduzido um componente entre os dois denominado Controller (ou Controlador)."
+
+Resposta: Correta.
+O Controller é o intermediário entre o Model e a View, gerenciando a interação.
+"O MVC define como os componentes da aplicação interagem e, apesar de ser um padrão de arquitetura de software, não é considerado um software design pattern."
+
+Resposta: Errada.
+O MVC é amplamente reconhecido como um design pattern.
+Questão 3
+Afirmações:
+"Os padrões de projetos de software representam uma abordagem comprovada para se resolver problemas recorrentes no desenvolvimento de sistemas de software padronizados e confiáveis."
+
+Resposta: Correta.
+Padrões de projeto são exatamente isso: soluções testadas e reutilizáveis para problemas comuns no desenvolvimento de software.
+"Os padrões de projetos de software são diretrizes e soluções de projetos amplamente aceitas, que ajudam a melhorar eficiência, qualidade e manutenção."
+
+Resposta: Correta.
+Essas diretrizes são aceitas por sua capacidade de melhorar a organização e a qualidade do software.
+Questão 4
+Afirmações:
+"Os streams são os canais de comunicação entre o cliente e o servidor, ou seja, os sockets."
+
+Resposta: Errada.
+Os streams são canais de dados que podem ser usados em sockets, mas não são sinônimos de sockets.
+"Um stream é usado em programação para permitir imprimir, ler e gravar dados de/em dispositivos e entrada e saída e, ao usá-lo, pode-se enviar ou receber os dados por meio de um fluxo."
+
+Resposta: Correta.
+Streams são usados em leitura e escrita de dados em dispositivos e canais de comunicação.
